@@ -24,7 +24,7 @@ phases:
         - export KUBECONFIG=$HOME/.kube/config
   build:
     commands:
-      - docker login -u samimbsnl -p Mona1234*
+      - docker login -u samimbsnl -p 
       - docker build --tag $REPOSITORY_URI:$TAG .
       
       - docker push $REPOSITORY_URI:$TAG
